@@ -28,7 +28,7 @@ class App extends Component {
         return (
             <BrowserRouter>
 
-                <Route path ="/login" render={props => <Login giveToken={(tokenData) => this.gotToken(tokenData)} {...props}/>}/>
+                <Route path ="/" exact render={props => <Login giveToken={(tokenData) => this.gotToken(tokenData)} {...props}/>}/>
                 <Route path ="/home" render={props => <Home passingData={this.state.userToken}/>}/>
                 <Route path ="/show/:id" component={Show}/>
                 <Route path ="/create" component={Create}/>

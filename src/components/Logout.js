@@ -5,8 +5,7 @@ function Logout(props) {
    
     return (
         <React.Fragment>
-           {/* // <Link to="/login"><button >Logout</button></Link> */}
-               {/* this.props.history.push('/login') */}
+          
         </React.Fragment>
     )
 }
