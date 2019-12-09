@@ -14,16 +14,16 @@ function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item active">
-                                <a className="nav-link" href="/home">Home <span class="sr-only">Home</span></a>
+                                <Link className="nav-link" to="/home">Home <span class="sr-only">Home</span></Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/create">My token id is:{props.toNavbar}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Create</a>
+                                <Link  className="nav-link" to="/create">Create</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/login"><a className="nav-link" href="#">Log Out</a></Link>
+                                <Link className="nav-link" to="/">Log Out</Link>
                             </li>
                         </ul>
                    </div>
