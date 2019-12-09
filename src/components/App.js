@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {Route, BrowserRouter, Switch} from 'react-router-dom';
+import {Route, BrowserRouter} from 'react-router-dom';
 
 import Login from './Login'
 import Home from './Home'
-import Navbar from './Navbar';
 import Show from './Show';
 import Create from './Create';
 import Edit from './Edit';

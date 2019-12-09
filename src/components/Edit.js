@@ -42,7 +42,7 @@ class Edit extends Component {
         // console.log(this.props.match.params.id)
 
         // now using state to check , we are getting data or not
-        //log(this.state.userId)
+        //console.log(this.state.userId)
         
         return (
             <React.Fragment>

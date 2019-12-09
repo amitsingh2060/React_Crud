@@ -36,7 +36,7 @@ class Show extends Component {
                                 <div class="card-body">
                                      <h5 class="card-title">Full Name: {this.state.userData.first_name} {this.state.userData.last_name}</h5>
                                         <p class="card-text">Email Id:{this.state.userData.email}</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    
                                 </div>
                         </div>
 
