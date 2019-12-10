@@ -30,17 +30,17 @@ class Home extends Component {
                         <td>{eachUser.first_name}</td>
                         <td>{eachUser.last_name}</td>
                         <td>{eachUser.email}</td>
-                        <Link to={`/edit/${eachUser.id}`}> <td>Edit</td></Link>
+                        <td><Link to={`/edit/${eachUser.id}`}> Edit</Link></td>
 
-                        <Link to={`/delete/${eachUser.id}`}> <td>Delete</td></Link>
-                        <td><img src={eachUser.avatar}></img></td>
+                        <td> <Link to={`/delete/${eachUser.id}`}> Delete</Link></td>
+                        <td><img src={eachUser.avatar} height="50" width="50"></img></td>
                      </tr>
                  </tbody>
             );
         });
         return (
             <React.Fragment>
-               {/* importing Navbar */}
+               {/* importing Navbar  */}
                 <Navbar toNavbar={this.props.passingData}/>
                 <div className="container">
                     <div className="row">
@@ -55,7 +55,6 @@ class Home extends Component {
                                         <th scope="col">Edit</th>
                                         <th scope="col">Delete</th>
                                         <th scope="col">img</th>
-
                                         </tr>
                                     </thead>
                                         {showUsers}

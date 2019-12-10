@@ -32,17 +32,23 @@ class Show extends Component {
                     <div className="col-6">
              
                         <div className="card">
-                            <img src={this.state.userData.avatar} className="card-img-top" alt="..."/>
+
+                            <div width="50" height="50" class="card-img-top">
+                            <img src={this.state.userData.avatar}  className="card-img-top" alt="..."/>
+                            </div>
+                        
                                 <div class="card-body">
                                      <h5 class="card-title">Full Name: {this.state.userData.first_name} {this.state.userData.last_name}</h5>
                                         <p class="card-text">Email Id:{this.state.userData.email}</p>
                                     
                                 </div>
                         </div>
-
+                          
                     </div>
                 </div>
             </div>
+
+                    
             </React.Fragment>
         );
     }
