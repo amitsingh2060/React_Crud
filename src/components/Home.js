@@ -23,19 +23,19 @@ class Home extends Component {
        console.log(this.props.passingData)
         let showUsers = this.state.userData.map(eachUser => {
             return (
-                 <div>
+                 <tbody>
+                     <tr>
+                     <Link to={`/show/${eachUser.id}`}><th scope="row">{eachUser.id}</th></Link>
 
-                    <Link to={`/show/${eachUser.id}`}><th scope="row">{eachUser.id}</th></Link>
+                        <td>{eachUser.first_name}</td>
+                        <td>{eachUser.last_name}</td>
+                        <td>{eachUser.email}</td>
+                        <Link to={`/edit/${eachUser.id}`}> <td>Edit</td></Link>
 
-                    <td>{eachUser.first_name}</td>
-                    <td>{eachUser.last_name}</td>
-                    <td>{eachUser.email}</td>
-                    <Link to={`/edit/${eachUser.id}`}> <td>Edit</td></Link>
-
-                    <Link to={`/delete/${eachUser.id}`}> <td>Delete</td></Link>
-                    <td><img src={eachUser.avatar}></img></td>
-
-                 </div>
+                        <Link to={`/delete/${eachUser.id}`}> <td>Delete</td></Link>
+                        <td><img src={eachUser.avatar}></img></td>
+                     </tr>
+                 </tbody>
             );
         });
         return (
@@ -58,11 +58,7 @@ class Home extends Component {
 
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
                                         {showUsers}
-                                        </tr>
-                                    </tbody>
                                 </table>
                         </div>
                     </div>
